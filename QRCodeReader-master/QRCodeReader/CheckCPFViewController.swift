@@ -11,9 +11,10 @@ import UIKit
 class CheckCPFCiewController: UIViewController {
     
 
-
+    @IBOutlet weak var buttonSend: UIButton!
     @IBOutlet weak var input: UITextField!
      @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var checkPhoto: UIImageView!
     
     var id : String!
     var CPF = ""
@@ -23,6 +24,7 @@ class CheckCPFCiewController: UIViewController {
         
         link(id: id)
 
+        checkPhoto.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -76,7 +78,10 @@ class CheckCPFCiewController: UIViewController {
         if input.text != ""{
             print(input.text! + " " + CPF)
             if input.text == CPF{
+                buttonSend.isHidden = true
+                input.isHidden = true
                 messageLabel.text = "Liberado"
+                checkPhoto.isHidden = false
             }
         }
     }

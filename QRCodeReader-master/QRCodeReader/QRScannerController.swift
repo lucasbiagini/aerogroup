@@ -11,6 +11,8 @@ import AVFoundation
 
 class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
+    
+    //@IBOutlet weak var buttonSend: UIButton!
     @IBOutlet var messageLabel:UILabel!
     @IBOutlet var topbar: UIView!
     var CPF = ""
