@@ -1,0 +1,1 @@
+[{"id":"c8bd834.e86f78","type":"switch","z":"d529cbc2.4b6948","name":"","property":"payload","propertyType":"msg","rules":[{"t":"eq","v":"0","vt":"num"},{"t":"eq","v":"1","vt":"num"}],"checkall":"true","outputs":2,"x":1052,"y":712,"wires":[["ff7e12c6.5f176"],["a64b6dda.ecd55"]]}]
